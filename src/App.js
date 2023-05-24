@@ -53,9 +53,9 @@ function App() {
       {tasks.map(todo => (
         <TodoItem key={todo.id} todo={todo} onEdit={handleEditTodo} onDelete={handleDeleteTodo} />
       ))}
-      <button onClick={handleLoadMoreClick}>Load more</button>
-      <button onClick={handlethePreviousTasksClick}>the previous tasks</button>
-      <button onClick={handleAllTasksClick}>All Tasks</button>
+      <button className='add-todo-button'  onClick={handleLoadMoreClick}>Load page</button>
+      <button className='add-todo-button' onClick={handlethePreviousTasksClick}> previous page</button>
+      <button className='add-todo-button' onClick={handleAllTasksClick}>All pages</button>
     </div>
   );
 }
