@@ -5,7 +5,7 @@ import AddTodo from './component/AddTodo';
 import useTodoApi from './function/useTasks.js';
 
 import './App.css';
-
+  
 function App() {
   const [page, setPage] = useState(1);
   const { tasks, createTask, updateTask, deleteTask, fetchNextTasks, fetchTasks } = useTodoApi(); // using custom hook

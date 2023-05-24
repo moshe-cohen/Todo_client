@@ -20,7 +20,7 @@ function TodoItem({ todo, onEdit, onDelete }) {
   function handleToggleComplete() {
     onEdit(todo.id, editedDescription, !todo.done);
   }
-
+  
   return (
   
   <div className='add-todo-form'>
@@ -33,6 +33,7 @@ function TodoItem({ todo, onEdit, onDelete }) {
       )}
       <button className='task-delete' onClick={handleDelete}>Delete</button>
       <button className='task-delete' onClick={handleToggleComplete}>Done</button>
+      {/* <input type='checkbox' checked={todo.done} onChange={handleToggleComplete}/> */}
     </div>
   );
 }

@@ -7,7 +7,7 @@ const useTasks = () => {
   const [tasks, setTasks] = useState([]);
 
   const fetchNextTasks = async (page) => {
-    
+
     try {
       const fetchedTasks = await httpRequest('GET', `http://localhost:3000/tasks/page/${page}`);
       setTasks(fetchedTasks);
@@ -15,7 +15,7 @@ const useTasks = () => {
       console.error("Failed to create task:", error);
     }
   };
-  
+
 
   const fetchTasks = async () => {
     try {

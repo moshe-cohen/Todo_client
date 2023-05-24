@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 function AddTodo({ onAdd }) {
   const [description, setDescription] = useState('');
 
-  
   function handleSubmit(e) {
     e.preventDefault();
     if (description.trim() !== '') {
@@ -11,7 +10,7 @@ function AddTodo({ onAdd }) {
       setDescription('');
     }
   }
-  
+
 
   return (
     <form className='add-todo-form' onSubmit={handleSubmit}>
